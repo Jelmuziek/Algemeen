@@ -1,0 +1,38 @@
+:root{--ink:#1d2433;--bg:#f6f7f9;--line:#d5d9e0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header.top{background:#fff;border-bottom:1px solid var(--line);padding:1.5rem 1rem 1rem;text-align:center}
+header.top h1{margin:0 0 .25rem;font-size:1.6rem}
+header.top p{margin:0 0 1rem;color:#5a6272}
+nav{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+nav a{padding:.35rem .9rem;border-radius:999px;color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;background:var(--c)}
+nav a:hover,nav a:focus-visible{outline:3px solid var(--l);outline-offset:2px}
+main{max-width:62rem;margin:0 auto;padding:1rem}
+section{margin:2rem 0 3rem;scroll-margin-top:1rem}
+section h2{margin:0;padding:.8rem 1.1rem;background:var(--c);color:#fff;font-size:1.3rem;border-radius:8px 8px 0 0}
+.intro{background:#fff;border:1px solid var(--line);border-top:0;padding:1rem 1.1rem}
+.intro p{margin:.35rem 0}
+.intro b{color:var(--c)}
+.intro ul{margin:.35rem 0 0;padding-left:1.2rem}
+.intro .pr{font-style:italic;color:#4a5160}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-top:0;border-radius:0 0 8px 8px;background:#fff}
+table{border-collapse:collapse;width:100%;min-width:34rem}
+thead th{background:var(--c);color:#fff;text-align:left;padding:.55rem .8rem;font-size:.9rem}
+td,tbody th{padding:.55rem .8rem;border-top:1px solid var(--line);vertical-align:top}
+tbody th{background:var(--l);color:var(--c);text-align:left;width:20%;border-right:1px solid var(--line)}
+td:first-of-type{font-weight:600;width:30%}
+td:empty{color:#999}
+footer{text-align:center;padding:1.5rem 1rem 2.5rem;color:#5a6272;font-size:.85rem}
+#architectuur{--c:#0b62a8;--l:#dcebf8}
+#beeldend{--c:#2c3f8f;--l:#dfe3f4}
+#dans{--c:#9a4509;--l:#fbe6d4}
+#film{--c:#5a3c9c;--l:#e8e1f5}
+#muziek{--c:#922a28;--l:#f6dcdb}
+#theater{--c:#8a6a05;--l:#f5ebc8}
+nav a[href="#architectuur"]{--c:#0b62a8;--l:#dcebf8}
+nav a[href="#beeldend"]{--c:#2c3f8f;--l:#dfe3f4}
+nav a[href="#dans"]{--c:#9a4509;--l:#fbe6d4}
+nav a[href="#film"]{--c:#5a3c9c;--l:#e8e1f5}
+nav a[href="#muziek"]{--c:#922a28;--l:#f6dcdb}
+nav a[href="#theater"]{--c:#8a6a05;--l:#f5ebc8}
+@media(max-width:600px){main{padding:.5rem}header.top h1{font-size:1.3rem}}
